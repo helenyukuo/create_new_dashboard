@@ -11,7 +11,7 @@ fred_series_long_names = {
     "RIFSPPFAAD90NB": "90-Day AA Financial Commercial Paper Interest Rate",
     "DTB3": " 3-Month Treasury Bill Secondary Market Rate, Discount Basis",
     "DGS10": "Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity",
-    "T10Y2Y": "10-Year Treasury Constant Maturity Minus 2-Year Treasury Constant Maturity",
+    "T10Y3M": "10-Year Treasury Constant Maturity Minus 3-Month Treasury Constant Maturity",
     "VIXCLS": "CBOE Volatility Index: VIX",
     # "GDP": "Gross Domestic Product",
 }
@@ -22,7 +22,7 @@ fred_series_short_names = {
     "RIFSPPFAAD90NB": "90-Day AA Fin CP",
     "DTB3": "3-Month T-Bill",
     "DGS10": "10-Year Treasury",
-    "T10Y2Y": "10Y-2Y Spread",
+    "T10Y3M": "10Y-3M Spread",
     "VIXCLS": "VIX",
     # "GDP": "GDP",
 }
