@@ -23,7 +23,7 @@ def transform_series(df):
     dfn = pd.DataFrame().reindex_like(df)
     # 'High Yield Index OAS': Leave as is
     dfn["High Yield Index OAS"] = df["High Yield Index OAS"]
-    dfn["10Y-2Y Spread"] = df["10Y-2Y Spread"]
+    dfn["10Y-3M Spread"] = df["10Y-3M Spread"]
     dfn["VIX"] = df["VIX"]
     dfn["CP - Treasury Spread, 3m"] = df["90-Day AA Fin CP"] - df["10-Year Treasury"]
     # dfn['NASDAQ/GDP'] = df['NASDAQ']/(df['GDP'].ffill())
@@ -160,7 +160,7 @@ def plot_unnormalized_series(df):
         "90-Day AA Fin CP",
         "3-Month T-Bill",
         "10-Year Treasury",
-        "10Y-2Y Spread",
+        "10Y-3M Spread",
         "VIX",
     ]
 
@@ -209,7 +209,7 @@ def plot_unnormalized_series(df):
 def plot_normalized_series(dfn):
     series_names = [
         "High Yield Index OAS",
-        "10Y-2Y Spread",
+        "10Y-3M Spread",
         "VIX",
         "CP - Treasury Spread, 3m",
         "NASDAQ Ret (transformed)",
@@ -299,3 +299,4 @@ def _demo():
 
     fig = px.bar(dfn_long, x="DATE", y="value", color="variable", title="Long-Form Input")
     fig.show()
+
